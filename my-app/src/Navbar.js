@@ -16,17 +16,11 @@ function AppNavbar() {
         <Navbar.Collapse id="main-navbar">
           {/* ms-auto pushes the Nav to the right */}
           <Nav className="ms-auto">
-            <Nav.Link className="text-white" as={Link} to="/home">Home</Nav.Link>
+            <Nav.Link className="text-white" as={Link} to="/">Home</Nav.Link>
             <Nav.Link className="text-white" as={Link} to="/aboutus">About Us</Nav.Link>
             <Nav.Link className="text-white" as={Link} to="/offerings">Our Offerings</Nav.Link>
             <Nav.Link className="text-white" as={Link} to="/booksession">Book A Session</Nav.Link>
             <Nav.Link className="text-white" as={Link} to="/contactus">Contact Us</Nav.Link>
-            
-            {/* <Nav.Link className="text-white" href="#home">Home</Nav.Link>
-            <Nav.Link className="text-white" href="#projects">About Us</Nav.Link>
-            <Nav.Link className="text-white" href="#offerings">Our Offerings</Nav.Link>
-            <Nav.Link className="text-white" href="#booksession">Book A Session</Nav.Link>
-            <Nav.Link className="text-white" href="#contactus">Contact Us</Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
