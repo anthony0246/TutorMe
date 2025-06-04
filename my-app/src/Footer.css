@@ -1,0 +1,44 @@
+.footer {
+  background-color: #0d1b2a;
+  color: #ffffff; /* Make all text white by default */
+}
+
+.footer h5,
+.footer h6 {
+  color: #ffffff; /* Ensure headings are white */
+  font-weight: 600;
+}
+
+.footer p,
+.footer li {
+  color: #f1f1f1; /* Softer white for readability */
+}
+
+.footer a {
+  color: #adb5bd;
+  margin-right: 12px;
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer a:hover {
+  color: #0d6efd;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-description,
+.footer-copy {
+  color: #ffffff !important;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
