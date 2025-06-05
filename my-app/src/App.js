@@ -12,7 +12,9 @@ function App() {
     return (
     <BrowserRouter>
       <div className="d-flex flex-column min-vh-100">
-        <AppNavbar />
+      <AppNavbar/>          {/* appears on every page */}
+      <HeroSection/>
+      <HomePageCards />
         <div className="flex-grow-1">
           <Routes>
             <Route path="/offerings" element={<OurOfferings />} />
@@ -22,9 +24,7 @@ function App() {
         </div>
         <Footer /> 
       </div>
-      <AppNavbar/>          {/* appears on every page */}
-      <HeroSection/>
-      <HomePageCards />
+      
       <Routes>               {/* your routes here */}
         {/* <Route path="/" element={<Home />} /> */}
       </Routes>
