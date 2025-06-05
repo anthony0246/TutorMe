@@ -20,7 +20,6 @@ function AppNavbar() {
             <Nav.Link className="text-white" as={Link} to="/aboutus">About Us</Nav.Link>
             <Nav.Link className="text-white" as={Link} to="/offerings">Our Offerings</Nav.Link>
             <Nav.Link className="text-white" as={Link} to="/booksession">Book A Session</Nav.Link>
-            <Nav.Link className="text-white" as={Link} to="/contactus">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,0 +1,40 @@
+.book-session-page {
+  background-color: #f9fafe;
+  font-family: 'Segoe UI', sans-serif;
+  padding-top: 2rem;
+}
+
+.package-card {
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.package-card:hover {
+  transform: scale(1.03);
+  border-color: #007bff;
+}
+
+.package-card.selected {
+  border-color: #007bff;
+  background-color: #e6f0ff;
+}
+
+form .form-control, form .form-select {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+button[type=\"submit\"] {
+  padding: 0.6rem 2rem;
+  font-weight: 600;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+button[type=\"submit\"]:hover {
+  background-color: #003d80;
+}
