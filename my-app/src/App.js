@@ -5,6 +5,8 @@ import OurOfferings from './OurOfferings';
 import Footer from './Footer';
 import AboutUs from './AboutUs';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // if you route
+import HeroSection from './HeroSection';
+import HomePageCards from './HomePageCards';
 
 function App() {
     return (
@@ -20,6 +22,12 @@ function App() {
         </div>
         <Footer /> 
       </div>
+      <AppNavbar/>          {/* appears on every page */}
+      <HeroSection/>
+      <HomePageCards />
+      <Routes>               {/* your routes here */}
+        {/* <Route path="/" element={<Home />} /> */}
+      </Routes>
     </BrowserRouter>
   );
 }
