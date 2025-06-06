@@ -28,7 +28,7 @@ export default function HomePageCards() {
       title: 'Our Offerings',
       img: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=600&q=70',
       text: 'Explore the range of subjects, packages and learning formats we provide.',
-      link: '/ourofferings',
+      link: '/offerings',
       btn: 'Explore',
     },
     {

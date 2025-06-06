@@ -2,7 +2,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import './OurOfferings.css';
-
+import { Link } from 'react-router-dom';
 import mathImg from './images/math.png';
 import scienceImg from './images/science.png';
 import codingImg from './images/coding.png';
@@ -49,9 +49,13 @@ function OurOfferings() {
                       <li key={idx} className="text-dark">• {item}</li>
                     ))}
                   </ul>
-                  <Button variant="outline-primary" className="mt-auto fw-semibold">
+                  <Link
+                    to="/booksession"
+                    className="btn btn-outline-primary mt-auto fw-semibold text-decoration-none"
+                    >
                     Register Now
-                  </Button>
+                </Link>
+
                 </Card.Body>
               </Card>
             </Col>

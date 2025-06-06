@@ -14,7 +14,7 @@ const packages = [
   { title: 'Science Success', description: 'Physics, chemistry, and biology foundations.',   id: 'science'}
 ];
 
-const tutors = ['Amira Khalil', 'Layla Kassem', 'Youssef Farhat'];
+const tutors = ['Elias Coumine', 'Sara El-Mansour', 'Jad Atallah'];
 
 function BookSession() {
   /* ────────── local state ────────── */
@@ -29,15 +29,29 @@ function BookSession() {
   const [studentLvl, setStudentLvl] = useState('');
   const [sessionMd,  setSessionMd]  = useState('');
   const [studyPref,  setStudyPref]  = useState('');
+  const minTime = new Date();
+    minTime.setHours(8, 0, 0);
+
+    const maxTime = new Date();
+    maxTime.setHours(20, 0, 0);
+
 
   /* ────────── handlers ────────── */
   const handlePackageClick = (pkgId) => setSelectedPackage(pkgId);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    if (!selectedPackage) return alert('Please choose a tutoring package.');
     if (!selectedDate)  return alert('Pick a date first!');
-    if (!selectedTutor) return alert('Pick a tutor first!');
+    if (!selectedTutor) return alert('Pick a tutor first!');  
+    if (!firstName.trim())   return alert('First name is required.');
+    if (!lastName.trim())    return alert('Last name is required.');
+    if (!email.trim())       return alert('Email address is required.');
+    if (!phone.trim())       return alert('Phone number is required.');
+    if (!studentLvl)         return alert('Please select your student level.');
+    if (!sessionMd)          return alert('Please select the session mode.');
+    if (!studyPref)          return alert('Please select your study preference.');
+    
 
     if (!isTutorAvailable(selectedTutor, selectedDate)) {
       return alert(`${selectedTutor} is already booked for that slot. Please choose another time or tutor.`);
@@ -130,14 +144,21 @@ function BookSession() {
           <Row className="mb-3">
             <Col md={6}>
               <Form.Group>
-                <Form.Label>Select Appointment Date</Form.Label>
-                <DatePicker
+                <Form.Label> Select Appointment Date</Form.Label>
+                <DatePicker 
                   selected={selectedDate}
                   onChange={(date) => setSelectedDate(date)}
-                  className="form-control"
+                  className="m-2 form-control"
                   placeholderText="Choose a date"
+                  showTimeSelect
+                  timeIntervals={60} // or 15, 60, etc.
+                  timeFormat="HH:mm"
+                  dateFormat="MMMM d, yyyy h:mm aa"
+                    minTime={minTime}
+                    maxTime={maxTime}
                   required
                 />
+
               </Form.Group>
             </Col>
 
