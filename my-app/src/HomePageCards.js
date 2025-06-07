@@ -2,6 +2,8 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 import chalkboard from "./images/chalkboard-image.jpg"
 import logo from "./images/tutor-me.png"
+import offerings from "./images/our-offerings.jpg"
+import session from "./images/booksession.jpg"
 
 /**
  * Three “action” cards that link to the key TutorMe pages:
@@ -26,7 +28,7 @@ export default function HomePageCards() {
     {
       id: 'offerings',
       title: 'Our Offerings',
-      img: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=600&q=70',
+      img: `${offerings}`,
       text: 'Explore the range of subjects, packages and learning formats we provide.',
       link: '/offerings',
       btn: 'Explore',
@@ -34,7 +36,7 @@ export default function HomePageCards() {
     {
       id: 'book',
       title: 'Book a Session',
-      img: 'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=600&q=70',
+      img: `${session}`,
       text: 'Ready to start? Reserve a tutoring slot that fits your schedule.',
       link: '/booksession',
       btn: 'Book Now',
