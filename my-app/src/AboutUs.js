@@ -12,11 +12,10 @@ function AboutUs() {
       </div>
 
       <Container className="py-5">
-        {/* MISSION */}
         <section className="mb-5">
           <h2 className="text-center section-title">Our Mission</h2>
           <p className="lead text-center mission-text">
-            At TutorMe, our mission is to empower students to thrive in their post-secondary studies through accessible, subject-specific tutoring delivered by passionate, expert educators.
+            At TutorMe, our mission is to empower students to thrive in their high-school and post-secondary studies through accessible, subject-specific tutoring delivered by passionate, expert educators.
           </p>
         </section>
 

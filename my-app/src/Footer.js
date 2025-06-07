@@ -12,7 +12,7 @@ function Footer() {
           <Col md={4} className="mb-3 mb-md-0">
             <h5 className="text-white">TutorMe</h5>
             <p className="footer-description">
-              Empowering students to succeed in their post-secondary journey with expert-led tutoring.
+              Empowering students to succeed in their high-school and post-secondary journey with expert-led tutoring.
             </p>
           </Col>
           <Col md={4} className="mb-3 mb-md-0">

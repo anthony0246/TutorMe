@@ -12,19 +12,19 @@ const offerings = [
     title: 'Mathematics Mastery',
     image: mathImg,
     description: 'Strengthen your foundation in algebra, calculus, and statistics.',
-    includes: ['10 tutoring hours', 'Weekly quizzes', 'Final assessment', '1-on-1 mentoring'],
+    includes: ['Weekly quizzes', 'Final assessment', '1-on-1 mentoring'],
   },
   {
     title: 'Science Success',
     image: scienceImg,
     description: 'Ace your science courses with support in physics, chemistry, and biology.',
-    includes: ['8 tutoring hours', 'Interactive labs', 'Mock exams', 'Resource toolkit'],
+    includes: ['Interactive labs', 'Mock exams', 'Resource toolkit'],
   },
   {
     title: 'Coding Kickstart',
     image: codingImg,
     description: 'Begin your programming journey with HTML, CSS, and JavaScript.',
-    includes: ['10 tutoring hours', 'Project-based learning', 'Code review sessions', 'Final project'],
+    includes: ['Project-based learning', 'Code review sessions', 'Final project'],
   },
 ];
 
@@ -34,7 +34,7 @@ function OurOfferings() {
       <Container className="py-5">
         <h2 className="text-center mb-4 display-5 fw-bold text-white">Our Tutoring Packages</h2>
         <p className="text-center text-light mb-5 lead">
-          Designed to help you thrive in your post-secondary journey with expert-led support.
+          Designed to help you thrive in your high-school and post-secondary journey with expert-led support.
         </p>
         <Row className="g-4">
           {offerings.map((pkg, index) => (
