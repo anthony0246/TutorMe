@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://anthony0246.github.io/TutorMe",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
