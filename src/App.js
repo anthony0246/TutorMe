@@ -11,7 +11,7 @@ import HomePageCards from './HomePageCards';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="d-flex flex-column min-vh-100">
         <AppNavbar />
         <div className="flex-grow-1">
@@ -33,7 +33,8 @@ function App() {
         </div>
         <Footer />
       </div>
-    </BrowserRouter>
+    </BrowserRouter>,
+    document.getElementById("root")
   );
 }
 
