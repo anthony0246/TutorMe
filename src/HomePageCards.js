@@ -22,7 +22,7 @@ export default function HomePageCards() {
       title: 'About Us',
       img: `${logo}`,
       text: 'Learn more about the mission, values and team behind TutorMe.',
-      link: '/aboutus',                // change if you route differently
+      link: '/TutorMe/aboutus',
       btn: 'Read More',
     },
     {
@@ -30,7 +30,7 @@ export default function HomePageCards() {
       title: 'Our Offerings',
       img: ouroffering,
       text: 'Explore the range of subjects, packages and learning formats we provide.',
-      link: '/offerings',
+      link: '/TutorMe/offerings',
       btn: 'Explore',
     },
     {
@@ -38,7 +38,7 @@ export default function HomePageCards() {
       title: 'Book a Session',
       img: bookappointment,
       text: 'Ready to start? Reserve a tutoring slot that fits your schedule.',
-      link: '/booksession',
+      link: '/TutorMe/booksession',
       btn: 'Book Now',
     },
   ];
